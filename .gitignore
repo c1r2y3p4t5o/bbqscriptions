@@ -1,0 +1,11 @@
+node_modules
+.env
+.wallet.json
+.wallet*
+mints
+pending-*
+yarn.lock
+.pending*
+.cookie
+bulk-mint.sh
+
