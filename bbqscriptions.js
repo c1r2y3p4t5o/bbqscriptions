@@ -166,12 +166,12 @@ async function walletSync() {
         console.log('No UTXOs found for this address.')
     }
 
-    // Ensure accurate conversion from DOGE to satoshis
+    // Ensure accurate conversion from BQC to satoshis
     wallet.utxos = utxos.map(utxo => {
-        const satoshis = Math.round(utxo.amount * 1e8)  // Convert from DOGE to satoshis
+        const satoshis = Math.round(utxo.amount * 1e8)  // Convert from BQC to satoshis
         
         // Log for debugging purposes
-        console.log(`UTXO: txid=${utxo.txid}, vout=${utxo.vout}, amount=${utxo.amount} DOGE (${satoshis} satoshis)`)
+        console.log(`UTXO: txid=${utxo.txid}, vout=${utxo.vout}, amount=${utxo.amount} BQC (${satoshis} satoshis)`)
         
         // Check if satoshi conversion is correct
         if (satoshis <= 0) {
